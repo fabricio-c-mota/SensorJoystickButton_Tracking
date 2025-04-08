@@ -78,4 +78,4 @@ O firmware integra diversas funcionalidades em um único código:
 - **Obs.: Ao consultar em mais detalhes a estrutura do código, o mesmo está integralmente comentado para facilitar o entendimento e comprenssão 😎.**
   
 - O seguinte Readme.md sintetiza o escopo geral das funcionalidades do respectivo projeto de maneira resumida, para mais detalhes sobre as especificações e estrutura do código, refêrencias, etc., siga o link do documento do projeto abaixo:
-- Link Documento: https://drive.google.com/file/d/10k0HdzPHZbZsIhnfF-CzDcBcKbno2f7K/view?usp=sharing
+- Link do Documento: https://drive.google.com/file/d/10k0HdzPHZbZsIhnfF-CzDcBcKbno2f7K/view?usp=sharing
