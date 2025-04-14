@@ -1,6 +1,6 @@
 # SensorJostickButton_Tracking: Sistema de Monitoramento Via Servidor para a placa BitDogLab, Raspeberry PI Pico W
 
-O presente sistema integra o monitoramento de um botão, a leitura do sensor de temperatura embutido e a captura da direção do joystick (interpretada como “Rosa dos Ventos”) via conexão Wi-Fi. O firmware roda em uma placa BitDogLab com Raspberry Pi Pico W e utiliza o protocolo lwIP para comunicação TCP/HTTP.
+O presente sistema integra o monitoramento de um botão, a leitura do sensor de temperatura embutido e a captura da direção do joystick (interpretada de acordo com a “Rosa dos Ventos”) via conexão Wi-Fi. O firmware roda em uma placa BitDogLab com Raspberry Pi Pico W e utiliza o protocolo lwIP para comunicação TCP/HTTP.
 
 ## Configuração e Execução
 
@@ -26,7 +26,7 @@ O projeto está organizado de forma modular, seguindo uma estrutura padrão para
 - **`CMakeLists.txt`:**  
   Configura as bibliotecas e inclui diretórios essenciais do Pico SDK e do lwIP (por exemplo, `pico_stdlib`, `hardware_gpio`, `hardware_adc` e `cyw43_arch`). Além disso, relaciona os arquivos para o servidor HTTP (como `httpd.c` e `fs.c`).
 
-- **Código Fonte Principal (`main.c` ou equivalente):**  
+- **Código Fonte Principal (`SensorJoystickButton_Tracking.c` ou equivalente):**  
   Implementa a lógica central do projeto. Nele são configuradas as inicializações de hardware, a conexão Wi-Fi, os ADCs para o sensor de temperatura e o joystick, o monitoramento do botão e a estruturação da resposta HTML para o servidor TCP.
 
 > **Índice de Diretórios:**  
@@ -75,7 +75,7 @@ O firmware integra diversas funcionalidades em um único código:
   A utilização do lwIP com configurações customizadas em `lwipopts.h` garantiu uma integração eficaz dos protocolos TCP/HTTP com a camada de hardware, permitindo atualizações rápidas e precisas dos dados.
 
 ## Conclusão
-- **Obs.: Ao consultar em mais detalhes a estrutura do código, o mesmo está integralmente comentado para facilitar o entendimento e comprenssão 😎.**
+- **Obs.: Ao consultar em mais detalhes a estrutura do código, o mesmo está integralmente comentado para facilitar o entendimento e comprenssão 🚀.**
   
-- O seguinte Readme.md sintetiza o escopo geral das funcionalidades do respectivo projeto de maneira resumida, para mais detalhes sobre as especificações e estrutura do código, refêrencias, etc., siga o link do documento do projeto abaixo:
+- O seguinte Readme.md sintetiza o escopo geral das funcionalidades do respectivo projeto de maneira resumida, para mais detalhes sobre as especificações e estrutura do código, refêrencias, etc., siga o link do documento original do projeto abaixo:
 - Link do Documento: https://drive.google.com/file/d/10k0HdzPHZbZsIhnfF-CzDcBcKbno2f7K/view?usp=sharing
